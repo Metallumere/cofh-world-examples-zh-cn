@@ -1,38 +1,35 @@
-# [CoFH World 经典实用案例——内含大量实例、截图及纠结于世界生成时所注意的内容](https://www.reddit.com/r/feedthebeast/comments/818y32/the_cofh_word_cookbook_a_huge_list_of_examples/)
+# [The COFH Word Cookbook - A Huge List of Examples, Screenshots, and Notes on Messing with Worldgen](https://www.reddit.com/r/feedthebeast/comments/818y32/the_cofh_word_cookbook_a_huge_list_of_examples/)
 
-**作者：*Fivefingeredfluke***
-
-**翻译：*SihenZhang***
+**Authored By *Fivefingeredfluke***
 
 ---
 
-CoFH World 是一个非常强大的工具，它可以轻松地将矿石、装饰物、树木或尖刺添加到世界生成当中。虽然每个生成选项的特定设置都可以在 [CoFH 的网站](https://teamcofh.com/docs/world-generator-configuration/) 上找到，但我一直希望能够有更为完整的实例来说明如何使用这些设置。所以我以截图等方式向你展示了大量的 CoFH World 的设置实例。（这些实例都是只由原版和 Thermal Mods 生成的。大多数实例的“频率”都被调的很高，所以在测试过程中很容易被发现。）
+COFH world is a pretty powerful tool for easily adding ores/decorations/trees/spikes to the world gen. And while the specific settings for each generation option can be found on [COFH's site](https://teamcofh.com/docs/world-generator-configuration/), I had always wished there were more full example of how the settings could be used. So I present you the big list of COFH world setting examples with screen shots and such. (These have all been generated with only vanilla and thermal mods. The frequency is turned up way too high on most of these so they were easy to spot during testing)
 
-## 巨石型生成——雪球
-- [JSON 链接](https://github.com/superfluke/cofh-world-examples/blob/master/world/snow_balls.json)
+## Boulder Generation - Snowballs
+- [JSON link](https://github.com/superfluke/cofh-world-examples/blob/master/world/snow_balls.json)
 - ![Screenshot](https://i.imgur.com/bK6rnCv.png)
-- 注意：仅在被归类为 “snowy” 或 “frozen” 的生物群系中生成雪球装饰物。
-## 巨石型生成——深层矿物
-- [JSON 链接](https://github.com/superfluke/cofh-world-examples/blob/master/world/deep_boulder.json)
+- Notes: Generates snowball decorations only on the surface in biomes that are classified as 'snowy' or 'frozen'.
+## Boulder Generation - Deep Ores
+- [JSON link](https://github.com/superfluke/cofh-world-examples/blob/master/world/deep_boulder.json)
 - ![Screenshot](https://i.imgur.com/xWRvRjd.png)
-- 注意：在基岩附近生成由 80% 地狱岩和 20% 下界石英构成的巨石。这是一个如何在生成中使用方块权重的好例子。
-## 湖泊型生成——下界烈焰之炽焱湖
-
-- [JSON 链接](https://github.com/superfluke/cofh-world-examples/blob/master/world/nether_lake.json)
+- Notes: Creates boulders close to bedrock that are made of 80% netherrack and 20% netherquartz. Good example of how to use weighted blocks in generation.
+## Lake Generation - Nether Pyro Lakes
+- [JSON link](https://github.com/superfluke/cofh-world-examples/blob/master/world/nether_lake.json)
 - ![Screenshot](https://i.imgur.com/DALkQQp.png)
-- 注意：由炽热的烈焰之炽焱构成的湖泊只会在下界生成，并且会有着混有岩浆块和地狱疣块的边缘。这也是一个限制维度的例子。
-## 湖泊型生成——隐藏的谐振熔融末影珍珠湖
-- [JSON 链接](https://github.com/superfluke/cofh-world-examples/blob/master/world/end_lake.json)
+- Notes: Lakes made of blazing pyrotheum that only generate in the nether and are outlined with a mix of magma and netherwart blocks. An example of dimension restriction.
+## Lake Generation - Hidden Enderium Lakes
+- [JSON link](https://github.com/superfluke/cofh-world-examples/blob/master/world/end_lake.json)
 - ![Screenshot](https://i.imgur.com/v11DYLK.png)
-- 注意：从结果上来说，很难通过截图表现湖泊被隐藏的特点。这个例子将湖泊的 “gap-block” 设置为末地石来达到隐藏真实湖泊的效果。截图中的玻璃应为末地石，请小心挖掘。
-## 晶球型生成——浮空熔岩球
-- [JSON 链接](https://github.com/superfluke/cofh-world-examples/blob/master/world/lava_geode.json)
+- Notes: Turns out it's hard to take a picture of hidden features. This is an example of using the lake 'gap' block set to endstone to hide the actual lake. The glass in the screen shot would normally be endstone, be careful mining.
+## Geode Generation - Floating Lava Orbs
+- [JSON link](https://github.com/superfluke/cofh-world-examples/blob/master/world/lava_geode.json)
 - ![Screenshot](https://i.imgur.com/Ipzmgiq.png)
-- 注意：晶球型生成可以以一种外部的方块来包围另一种内部的方块（在整合包里你可以巧妙地将一些稀有的矿物生成在黑曜石外壳之中）。这个例子中的外部是玻璃，内部是熔岩。如果你不介意漂浮在空中的东西，那么这是一个很好的以“空气”作为材料特征并生成在空中的例子。
-## 石笋型生成——沙锥
-- [JSON 链接](https://github.com/superfluke/cofh-world-examples/blob/master/world/sand_spikes.json)
+- Notes: Geodes can have one outline block surround another set of interior blocks (nicely used in one pack to generate rare ores in a shell of obsidian). Here the exterior is glass and the interior is lava. An example that 'air' can be used as the material features will generate in, if you don't mind things floating.
+## Stalagmite Generation - Sand Spikes
+- [JSON link](https://github.com/superfluke/cofh-world-examples/blob/master/world/sand_spikes.json)
 - ![Screenshot](https://i.imgur.com/xvHi4H5.png)
-- 注意：这个例子其实教会了我一些东西。就像你可以对要生成的方块列出一个权重列表，你也可以为你所选的生成器类型列出一个权重列表。在这张截图中你可以看到红砂岩与岩浆块形成的锥刺相对更少一些，大约是砂岩锥刺生成倍率的 60% 。这种加权生成可以被用来做一些东西，诸如 10 个铁矿石矿脉中有 1 个矿脉是由密集铁矿石构成。
+- Notes: This example actually taught me something. Much like you can have a weighted list of blocks to generate, you can also have a weighted list of generators to select from. In this screen shot you can see sandstone spikes are generation is selected about 60% of the time with red sand/magma spike being generated less often. This weighted generation could be used to do things like make 1 in 10 iron ore veins generate as dense iron ore.
 ## Stalagmite Generation - Oil Wells
 - [JSON link](https://github.com/superfluke/cofh-world-examples/blob/master/world/oil_well.json)
 - ![Screenshot](https://i.imgur.com/YsGcehi.png)
